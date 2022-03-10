@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+.nav-link {
+  font-size: 24px;
+  color: #fff;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Flex class
+.flex-rw {
+  display: flex;
+  flex-direction: row;
+  &-v {
+    @extend .flex-rw;
+    align-items: center;
+  }
+  &-h {
+    @extend .flex-rw;
+    justify-content: center;
+  }
+  &-v-h {
+    @extend .flex-rw;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.flex-cl {
+  display: flex;
+  flex-direction: column;
+  &-v {
+    @extend .flex-cl;
+    justify-content: center;
+  }
+  &-h {
+    @extend .flex-cl;
+    align-items: center;
+  }
+  &-v-h {
+    @extend .flex-cl;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.fill-height, .fill-width {
+  flex: 1;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}

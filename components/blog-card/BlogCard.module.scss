@@ -1,0 +1,32 @@
+.blogCard {
+  width: 265px;
+  min-height: 360px;
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+  background-color: #fff;
+  .image {
+    width: 100%;
+    height: 240px;
+  }
+  .cardDetails {
+    padding: 15px;
+    > :not(:last-child) {
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .desc {
+      font-size: 12px;
+    }
+    .redirectLink {
+      font-size: 14px;
+      text-decoration: underline;
+      &::after {
+        content: ' \2192';
+        margin-left: 2px;
+        display:inline-block;
+      }
+    }
+  }
+}

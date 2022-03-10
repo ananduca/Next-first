@@ -1,0 +1,13 @@
+.inputWrapper {
+  width: 100%;
+  max-width: 400px;
+  input, textarea {
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 18px;
+  }
+}

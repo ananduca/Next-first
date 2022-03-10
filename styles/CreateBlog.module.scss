@@ -1,0 +1,10 @@
+.formContainer {
+  width: 100%;
+  max-width: 500px;
+  padding: 50px;
+  margin: 30px auto;
+
+  > :not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
